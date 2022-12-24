@@ -150,7 +150,7 @@ if (GetModuleFileNameEx(hProc,hMod[0],ProcFile,sizeof(ProcFile))) {
 printf("[%5d]\t%s\n",lpidProcess[i],ProcFile); //输出进程
 //可以考虑将其注释掉，这样就不会输出进程列表了
 Pcount++;
-strcpy(FileName,"C:\\WINNT\\system32\\");
+strcpy(FileName,"C:\\Windows\\System32\\");
 strcat(FileName,name);//把⽂件名+路径复制到FileName变量中
 //查找进程中是否包含FileName
 if (strcmp(FileName,ProcFile)==LOW)
